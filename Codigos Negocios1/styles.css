@@ -1,0 +1,507 @@
+/* Paleta: #A25515 (naranja tierra), #F68736 (naranja brillante) */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px; /* espacio para header fijo */
+  background-color: #fffaf5;
+  color: #333;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #A25515;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* HERO */
+.hero {
+  background-color: #F68736;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .cta-button {
+  font-size: 1.1em;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-grande {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+/* GALERÍA DE PRODUCTOS */
+.productos, .formulario, .testimonios, .video-promocional, .nosotros {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.productos .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.productos .item {
+  flex: 1 1 150px;
+  max-width: 200px;
+  height: 220px;
+  border: 2px dashed #A25515;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productos .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.productos .item img:hover {
+  transform: scale(1.1);
+}
+
+/* VIDEO */
+.video-promocional video {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  text-align: left;
+  font-weight: 600;
+  color: #A25515;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+/* NOSOTROS */
+.nosotros {
+  background-color: #fff3ea;
+}
+
+.nosotros h2 {
+  color: #A25515;
+  margin-bottom: 1rem;
+}
+
+.nosotros h3 {
+  margin-top: 2rem;
+  color: #F68736;
+}
+
+/* AVISO DE PRIVACIDAD (Modal) */
+.aviso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.aviso-contenido {
+  background-color: #fff3ea;
+  padding: 2rem;
+  max-width: 900px;
+  width: 90%;
+  border: 2px solid #A25515;
+  border-radius: 10px;
+  line-height: 1.6;
+  max-height: 80%;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.oculto {
+  display: none;
+}
+
+.aviso h2 {
+  text-align: center;
+  color: #A25515;
+  margin-bottom: 1rem;
+}
+
+.aviso h3 {
+  color: #F68736;
+  margin-top: 1.2rem;
+}
+
+.aviso ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.aviso p, .aviso li {
+  margin: 0.4rem 0;
+}
+
+/* Botón Cerrar Aviso */
+.btn-cerrar {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #A25515;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cerrar:hover {
+  background-color: #F68736;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #F68736;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  header nav a {
+    display: block;
+    width: 100%;
+  }
+
+  .productos .galeria {
+    flex-direction: column;
+  }
+
+  form {
+    width: 90%;
+    max-width: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .aviso-contenido {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .btn-cerrar {
+    width: 100%;
+  }
+}
+
+/* Perfiles de colaboradores */
+.perfiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.perfil {
+  background: white;
+  border: 2px solid #F68736;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.perfil.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.perfil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #A25515;
+}
+
+.perfil h3 {
+  margin: 0.5rem 0;
+  color: #A25515;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.3s;
+}
+
+.perfil.visible h3 {
+  opacity: 1;
+}
+
+.perfil .cargo {
+  font-weight: bold;
+  color: #F68736;
+  margin-bottom: 0.5rem;
+}
+
+.perfil .bio {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .perfiles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animación botón Comprar ahora y botones en general */
+button,
+.cta-button {
+  background-color: #f39c12; /* naranja cálido */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(243, 156, 18, 0.4);
+  user-select: none;
+  display: inline-block;
+  max-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 12px auto 0 auto; /* centra los botones */
+}
+
+button:hover,
+.cta-button:hover {
+  background-color: #d67e00;
+  box-shadow: 0 6px 10px rgba(214, 126, 0, 0.6);
+  transform: scale(1.05);
+}
+
+button:focus,
+.cta-button:focus {
+  outline: 3px solid #f7c55c;
+  outline-offset: 2px;
+}
+
+.cta-button {
+  font-size: 1.1em;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button.attention {
+  animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Galería: transición fade-in */
+.galeria .item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.galeria .item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mision-vision .card {
+  background: white;
+  border: 2px solid #F68736;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mision-vision .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.mision-vision h3 {
+  color: #A25515;
+  margin-bottom: 1rem;
+}
+
+/* Carrusel de testimonios */
+.carrusel-testimonios {
+  min-height: 100px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-left: 4px solid #f39c12;
+  background-color: #fdf6e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controles-carrusel button {
+  background-color: #f39c12;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.controles-carrusel button:hover {
+  background-color: #d67e00;
+}
+.cta-button-comprar {
+  background-color: #8B4C39; /* Terracota oscuro */
+  color: #fff8f0;
+  box-shadow: 0 4px 8px rgba(139, 76, 57, 0.4);
+  border: none;
+  padding: 12px 26px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: block;
+  margin: 25px auto;
+}
+
+.cta-button-comprar:hover {
+  background-color: #763B2C;
+  box-shadow: 0 6px 12px rgba(118, 59, 44, 0.5);
+}
+

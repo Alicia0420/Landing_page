@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TecToys: personajes tejidos a mano, totalmente personalizados" />
+  <meta name="keywords" content="personajes tejidos, muñecos personalizados, amigurumi, regalos geek, TecToys" />
+  <meta name="author" content="TecToys" />
+  <title>TecToys | Creaciones únicas para mundos fantásticos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="#inicio" class="logo">TecToys</a>
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#productos" class="nav-link">Productos</a></li>
+        <li><a href="#video" class="nav-link">Video</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#personaliza" class="nav-link">Personaliza el tuyo</a></li>
+        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#" id="link-aviso">Aviso de Privacidad</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LANDING -->
+  <main id="inicio">
+    <section class="hero">
+      <img src="img/logo-tectoys.png" alt="Logotipo TecToys" class="logo-grande" />
+      <h1>Creaciones únicas para mundos fantásticos</h1>
+      <p>Muñecos tejidos a mano, 100% personalizados, inspirados en tus personajes favoritos del mundo geek, la
+        nostalgia y la imaginación.</p>
+      <a href="https://tu-tienda.com/producto" target="_blank" class="cta-button cta-button-comprar">Comprar ahora</a>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="productos" class="productos">
+      <h2>Algunas de nuestras creaciones</h2>
+      <div class="galeria">
+        <div class="item"><img src="img/image1.png" alt="Personalizado 1" /></div>
+        <div class="item"><img src="img/image2.png" alt="Personalizado 2" /></div>
+        <div class="item"><img src="img/image3.png" alt="Personalizado 3" /></div>
+      </div>
+    </section>
+
+    <!-- VIDEO PROMOCIONAL -->
+    <section id="video" class="video-promocional">
+      <h2>Conoce tus TecToys</h2>
+      <video autoplay muted loop playsinline width="100%" poster="img/preview.png">
+        <source src="img/tectoys-demo.mp4" type="video/mp4" />
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos una marca creativa, apasionada y profesional, con un enfoque artesanal que fusiona diseño textil, cultura
+        pop y geek. Nos caracterizamos por nuestro compromiso con la autenticidad, el detalle y la cercanía con quienes
+        comparten el gusto por piezas únicas con un trasfondo emocional.</p>
+
+      <div class="mision-vision">
+        <div class="card">
+          <h3>🌱 Misión</h3>
+          <p>Nuestra misión es confeccionar muñecos de tela de alta calidad, inspirados en personajes icónicos,
+            videojuegos y referencias culturales contemporáneas, brindando un servicio personalizado que asegure
+            originalidad, atención al detalle y una experiencia significativa para cada cliente.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Visión</h3>
+          <p> Nuestra visión está enfocada en consolidarnos como líderes en el diseño y elaboración de muñecos de tela
+            personalizados en Latinoamérica, ofreciendo piezas que reflejan el valor cultural de la creatividad, el
+            mundo geek y la nostalgia, mediante productos únicos que conectan emocionalmente con nuestros clientes.</p>
+        </div>
+      </div>
+
+      <h2>Colaboradores</h2>
+      <div class="perfiles">
+        <div class="perfil">
+          <img src="img/colaborador1.jpg" alt="Colaborador 1">
+          <h3>Alicia Mariano</h3>
+          <p class="cargo">Fundadora & Diseñadora Principal</p>
+          <p class="bio">Apasionada del diseño textil y la cultura geek. Su enfoque está en crear piezas únicas que
+            conecten emocionalmente con cada cliente.</p>
+        </div>
+        <div class="perfil">
+          <img src="img/colaborador2.jpg" alt="Colaborador 2">
+          <h3>Derek Vargas</h3>
+          <p class="cargo">Co-fundador & Estratega Creativo</p>
+          <p class="bio">Encargado de la innovación y personalización de cada TecToy, asegurando la calidad y
+            autenticidad que caracteriza a la marca.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="personaliza" class="formulario">
+      <h2>Personaliza tu TecToy</h2>
+      <p>Cuéntanos tu idea y la hacemos realidad en hilo y creatividad.</p>
+
+      <form id="formulario-contacto">
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+        <label for="personaje">¿Qué personaje quieres?</label>
+        <input type="text" id="personaje" name="personaje" placeholder="¿Qué personaje quieres?" required />
+
+        <label for="detalles">Detalles, colores o referencia</label>
+        <textarea id="detalles" name="detalles" placeholder="Detalles, colores o referencia..." required></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="testimonios">
+      <h2>✨ Lo que dicen nuestros clientes ✨</h2>
+
+      <h3>Agrega tu comentario 😉🧡🤎</h3>
+      <form id="form-testimonio">
+        <textarea id="nuevo-testimonio" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Enviar comentario</button>
+      </form>
+
+      <h2>Comentarios Nuevos 🙀✨</h2>
+
+      <div id="carrusel-testimonios" class="carrusel-testimonios">
+        <!-- Aquí se mostrará un solo comentario a la vez -->
+      </div>
+
+      <div class="controles-carrusel">
+        <button id="prev-testimonio">‹ Anterior</button>
+        <button id="next-testimonio">Siguiente ›</button>
+      </div>
+    </section>
+
+    <!-- AVISO DE PRIVACIDAD (MODAL) -->
+    <div id="aviso" class="aviso oculto">
+      <div class="aviso-contenido">
+        <h2>🛡 Aviso de Privacidad – TecToys</h2>
+        <h3>Responsable del Tratamiento de Datos Personales</h3>
+        <p>TecToys, con domicilio en Pachuca, Hidalgo, México, es responsable del tratamiento de sus datos personales
+          conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+        <h3>Finalidades del Tratamiento</h3>
+        <ul>
+          <li>Procesar pedidos, pagos y envíos de productos (amigurumis y accesorios).</li>
+          <li>Contactarlo para brindar atención al cliente o seguimiento postventa.</li>
+          <li>Cumplir con obligaciones legales y fiscales aplicables.</li>
+        </ul>
+        <h3>Datos Personales Recabados</h3>
+        <p>Podemos recabar datos como: nombre, dirección, teléfono, correo electrónico y datos de facturación. No
+          solicitamos datos sensibles.</p>
+        <h3>Transferencias de Datos</h3>
+        <p>TecToys no comparte sus datos personales con terceros, salvo que sea necesario para cumplir obligaciones
+          legales o entregar su pedido (por ejemplo, servicios de mensajería).</p>
+        <h3>Derechos ARCO</h3>
+        <p>Usted puede acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales enviando una
+          solicitud al correo electrónico: <a href="mailto:correo@tectoys.mx">correo@tectoys.mx</a>. Se le responderá en
+          un plazo máximo de 20 días hábiles.</p>
+        <h3>Cambios en el Aviso de Privacidad</h3>
+        <p>Nos reservamos el derecho de modificar este aviso. Las actualizaciones estarán disponibles en nuestros
+          canales oficiales.</p>
+
+        <h2>📜 Términos y Condiciones de Uso – TecToys</h2>
+        <h3>Generales</h3>
+        <p>Al adquirir nuestros productos (amigurumis y accesorios), acepta los siguientes términos. Estos aplican para
+          compras realizadas en línea, redes sociales o directamente con TecToys.</p>
+        <h3>Precios y Pagos</h3>
+        <p>Todos los precios están en pesos mexicanos e incluyen IVA. El pago puede realizarse vía transferencia,
+          depósito, tarjeta de crédito/débito o plataformas electrónicas autorizadas.</p>
+        <h3>Envíos</h3>
+        <p>TecToys realiza envíos dentro de la República Mexicana. El costo y tiempo de entrega varía según ubicación y
+          transportista. No nos hacemos responsables por retrasos atribuibles a terceros.</p>
+        <h3>Garantía y Devoluciones</h3>
+        <p>Nuestros productos son artesanales, por lo que pueden variar ligeramente en forma y color. No se aceptan
+          devoluciones por cambio de opinión. Si el producto llega dañado, contáctenos dentro de las primeras 48 horas
+          de recibirlo.</p>
+        <h3>Propiedad Intelectual</h3>
+        <p>Las imágenes, diseños y textos utilizados en nuestros canales son propiedad de TecToys. Está prohibido su uso
+          o reproducción sin autorización expresa.</p>
+        <h3>Jurisdicción</h3>
+        <p>Cualquier conflicto será resuelto conforme a las leyes aplicables en Pachuca, Hidalgo, México.</p>
+
+        <button id="cerrar-aviso" class="btn-cerrar">Aceptar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <p>&copy; 2025 TecToys. Todos los derechos reservados.</p>
+    <p>Síguenos:
+      <a href="https://www.instagram.com/tectoys_mx/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="mailto:tectoysmx@gmail.com">Correo</a>
+    </p>
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("ti3hGcMJTuFR9pGiB");
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
